@@ -37,3 +37,31 @@
   --rdp-background-color: theme("colors.accent.600") !important;
   margin: 0 !important;
 }
+
+/* DayPicker range colors - full overrides */
+.rdp-day_range_start {
+  @apply bg-accent-500 text-primary-800 !important;
+}
+
+.rdp-day_range_middle {
+  @apply bg-accent-600 text-primary-800 !important;
+}
+
+.rdp-day_range_end {
+  @apply bg-accent-500 text-primary-800 !important;
+}
+
+/* Selected day (single day range) */
+.rdp-day_selected {
+  @apply bg-accent-500 text-primary-800 !important;
+}
+
+/* Hover effect */
+.rdp-day:hover:not(.rdp-day_disabled) {
+  @apply bg-accent-400 !important;
+}
+
+/* Disabled days */
+.rdp-day_disabled {
+  @apply opacity-40 cursor-not-allowed !important;
+}
